@@ -19,15 +19,8 @@ CHECK_OS(){
 }
 
 GET_SETTING_FAIL2BAN_INFO(){
-	read -p "允许SSH登陆失败次数,默认10:" BLOCKING_THRESHOLD
-	if [[ ${BLOCKING_THRESHOLD} = "" ]];then
-		BLOCKING_THRESHOLD='10'
-	fi
-	
-	read -p "SSH登陆失败次数超过${BLOCKING_THRESHOLD}次时,封禁时长(h),默认8760:" BLOCKING_TIME_H
-	if [[ ${BLOCKING_TIME_H} = "" ]];then
-		BLOCKING_TIME_H='8760'
-	fi
+	BLOCKING_THRESHOLD='10'
+	BLOCKING_TIME_H='12'
 
 	BLOCKING_TIME_S=$(expr ${BLOCKING_TIME_H} \* 3600)
 }
