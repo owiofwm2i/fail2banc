@@ -14,7 +14,7 @@ fail2ban 一键安装 \ 卸载脚本魔改版
 使用
 ---
 ```
-wget "https://raw.githubusercontent.com/n0thing2speak/fail2banc/master/fail2banc.sh" && bash fail2banc.sh install  && bash fail2banc.sh start
+wget "https://raw.githubusercontent.com/owiofwm2i/fail2banc/master/fail2banc.sh" && bash fail2banc.sh install  && bash fail2banc.sh start
 ```
 ![image](https://i.loli.net/2018/02/15/5a8533967e7f1.png)
 
